@@ -146,6 +146,12 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 		<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
+	<script>
+    function saveCounts() {
+        localStorage.setItem('allergy_count', allergy_count);
+        localStorage.setItem('cold_count', cold_count);
+    }
+</script>
 </div>
 		<div id="header" class= "w3-container w3-flat-carrot">
 </div>
@@ -174,7 +180,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	resultsText.innerHTML = "Probability it is allergies = " + allergyPercent + "%<br> Probability it is a cold = " + coldPercent + "%";	
 	}
-	
+	// Automatically show results when the page loads
+        window.onload = showResults;
   </script>
 	<p>DIY!</p>	
 	</footer>
