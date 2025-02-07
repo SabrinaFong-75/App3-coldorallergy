@@ -33,32 +33,6 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
       <link rel="stylesheet" href="w3.css">
       <link rel="stylesheet" href="w3-colors-flat.css">
    </head> 
-
-
-<script>
-        var allergy_count = 0;
-        var cold_count = 0;
-
-
-        function allergyAdd(){
-            allergy_count = allergy_count + 1;
-
-        }
-
-        function coldAdd(){
-            cold_count = cold_count + 1;
-        }
-	function showResults(){
-		var allergyPercent = (allergy_count / 6) * 100;
-		var coldPercent = (cold_count / 6) * 100;
-		var resultsText = document.getElementById("results");
-	resultsText.innerHTML = "Probability it is allergies = " + allergyPercent + "%<br> Probability it is a cold = " + coldPercent + "%";	
-	}
-	
-  </script>
-
-
-
 <style>	
 .body {
      margin: 0em;
@@ -179,7 +153,29 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <div id="content" class="w3-container">
 	<a href="#seven" onclick="showResults();" class="w3-btn w3-black"> Results</a>
     	</div>
+</div>
+	<script>
+        var allergy_count = 0;
+        var cold_count = 0;
 
+
+        function allergyAdd(){
+            allergy_count = allergy_count + 1;
+
+        }
+
+        function coldAdd(){
+            cold_count = cold_count + 1;
+        }
+	function showResults(){
+		var allergyPercent = (allergy_count / 6) * 100;
+		var coldPercent = (cold_count / 6) * 100;
+		var resultsText = document.getElementById("results");
+	resultsText.innerHTML = "Probability it is allergies = " + allergyPercent + "%<br> Probability it is a cold = " + coldPercent + "%";	
+	}
+	
+  </script>
+</div>
 	<p>DIY!</p>	
 	</footer>
 	</div>
