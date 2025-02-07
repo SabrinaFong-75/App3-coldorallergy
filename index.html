@@ -146,6 +146,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 		<a href="#seven"  onclick="allergyAdd();" class="w3-btn w3-black"> No </a>
 	</div>
+</div>
+	<div class="page" id="results">
+        <div class="w3-container w3-flat-carrot">
+            <h1>Results</h1>
+        </div>
+        <div id="content" class="w3-container">
+            <p id="resultsText"></p>
+            <a href="#header" class="w3-btn w3-grey">Restart</a>
+        </div>
+    </div>
 	<script>
     function saveCounts() {
         localStorage.setItem('allergy_count', allergy_count);
