@@ -54,7 +54,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
     z-index: 1;
 }
 </style>
-
+</head>
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
@@ -148,11 +148,21 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	</div>
 </div>
 		<div id="header" class= "w3-container w3-flat-carrot">
-		<h1>Results</h1>
-	</div>
-		<p id="results"></p>
-        <div id="content" class="w3-container">
-	<a href="#seven" onclick="showResults();" class="w3-btn w3-black"> Results</a>
+<html>
+<head>
+		<title>Results</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<link rel="stylesheet" href="w3.css">
+   	<link rel="stylesheet" href="w3-colors-flat.css">
+</head>
+<body>
+	<div id="header" class="w3-container w3-flat-carrot">
+        	<h1>Results</h1>
+	<div/>
+	<div id="content" class="w3-container">
+		<p id=results"></p>
+		<a href="#seven" onclick="showResults();" class="w3-btn w3-black"> Show Results</a>
     	</div>
 </div>
 	<script>
